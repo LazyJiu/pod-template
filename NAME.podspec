@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = '${POD_NAME}/**/*.{h,m}'
 
   s.resource_bundles = {
-    '${POD_NAME}' => ['${POD_NAME}/**/*.{png,xib'}]
+    '${POD_NAME}' => ['${POD_NAME}/**/*.{png,xib}']
   }
 
 s.dependency 'YBYConfig', '~> 1.0'
