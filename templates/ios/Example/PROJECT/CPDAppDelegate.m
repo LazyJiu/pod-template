@@ -7,12 +7,29 @@
 //
 
 #import "CPDAppDelegate.h"
+#import "SWModuleManager.h"
+#import "AppEnterRequestUtil.h"
 
 @implementation CPDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Module" ofType:@"plist"];
+    [[SWModuleManager sharedInstance] loadModulesWithPlistFile:path];
+    
+    
+    [[SWModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    
+    [[AppEnterRequestUtil sharedAppEnterRequestUtil] requestEnterInfoWithSuccess:^{
+        
+        //代表获取到入口配置文件了
+        
+        
+        
+        
+        
+    }];
     return YES;
 }
 

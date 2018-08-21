@@ -7,6 +7,7 @@
 //
 
 #import "CPDViewController.h"
+#import <MGJRouter.h>
 
 @interface CPDViewController ()
 
@@ -24,6 +25,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)login:(id)sender {
+    [MGJRouter openURL:login_home];
 }
 
 @end

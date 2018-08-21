@@ -1,7 +1,12 @@
-use_frameworks!
+#use_frameworks!
+source 'http://192.168.1.107:7000/ios/YBYSpec'
+source 'https://github.com/CocoaPods/Specs'
 
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
+  pod 'YBYWeakBusinessMoudle', '~> 1.0'
+  
+  pod 'YBYLoginModule', '~> 1.0'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
