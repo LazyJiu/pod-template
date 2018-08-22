@@ -8,6 +8,7 @@
 
 #import "CPDViewController.h"
 #import <MGJRouter.h>
+#import <ModuleURL.h>
 
 @interface CPDViewController ()
 
