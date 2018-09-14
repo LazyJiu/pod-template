@@ -16,5 +16,5 @@ target '${POD_NAME}_Example' do
 end
 
 target 'lib${POD_NAME}' do
-  #${INCLUDED_PODS}
+  ${INCLUDED_PODS}
 end
