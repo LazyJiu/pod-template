@@ -14,3 +14,7 @@ target '${POD_NAME}_Example' do
     ${INCLUDED_PODS}
   end
 end
+
+target 'lib${POD_NAME}' do
+  #${INCLUDED_PODS}
+end
