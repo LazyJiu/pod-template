@@ -95,6 +95,8 @@ RUBY
       # rename xcproject
       File.rename(project_folder + "/PROJECT.xcodeproj", project_folder + "/" +  @configurator.pod_name + ".xcodeproj")
 
+      File.rename(project_folder + "/libPROJECT", project_folder + "/" + "lib" + @configurator.pod_name)
+
       unless @remove_demo_target
         # change app file prefixes
         ["CPDAppDelegate.h", "CPDAppDelegate.m", "CPDViewController.h", "CPDViewController.m"].each do |file|
