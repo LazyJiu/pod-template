@@ -17,4 +17,9 @@ end
 
 target 'lib${POD_NAME}' do
   pod 'YBYConfig', '~> 1.0'
+  pod 'YBYCategory', '~> 1.0'
+  pod 'Masonry','1.1.0'
+  pod 'YYBaseModel', '~> 1.0'
+  pod 'YBYNetWork', '~> 1.0'
+  pod 'Utils', '~> 1.0'
 end
