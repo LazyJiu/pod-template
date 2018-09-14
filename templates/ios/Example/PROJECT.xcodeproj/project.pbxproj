@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C8CAF5F7214B859B00572ECF /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C8CAF5FA214B859B00572ECF /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				C8CAF5FB214B85A700572ECF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -312,6 +326,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					C8CAF5F7214B859B00572ECF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
@@ -330,6 +348,7 @@
 				6003F589195388D20070C39A /* PROJECT_Example */,
 				6003F5AD195388D20070C39A /* PROJECT_Tests */,
 				C8CAF5E6214B7B0400572ECF /* libPROJECT */,
+				C8CAF5F7214B859B00572ECF /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +375,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8CAF5FB214B85A700572ECF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nWORKSPACE_NAME=${PROJECT_NAME}.xcworkspace\nLIB_SCHEME_NAME=lib${PROJECT_NAME}\nPROJECT_NAME_Framework=lib${LIB_SCHEME_NAME}\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions\n\nxcodebuild clean -workspace \"${WORKSPACE_NAME}\" -scheme \"${PROJECT_NAME}\" -configuration Debug\n\nxcodebuild -workspace \"${WORKSPACE_NAME}\" -scheme \"${LIB_SCHEME_NAME}\" -configuration ${CONFIGURATION} -sdk iphoneos ONLY_ACTIVE_ARCH=NO   BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n\nxcodebuild -workspace \"${WORKSPACE_NAME}\" -scheme \"${LIB_SCHEME_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\n#cp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME_Framework}.a\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\n#SIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME_Framework}.framework/Modules/${PROJECT_NAME_Framework}.swiftmodule/.\"\n#if [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\n#cp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME_Framework}.framework/Modules/${PROJECT_NAME_Framework}.swiftmodule\"\n#fi\n#删除\nif [ -f \"${PROJECT_DIR}/libUtils/lib${PROJECT_NAME}.a\" ]; then\nrm -r \"${PROJECT_DIR}/libUtils/lib${PROJECT_NAME}.a\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME_Framework}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME_Framework}.a\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${PROJECT_DIR}\"\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}/${LIB_SCHEME_NAME}\"\n\n# 删除\n#rm -r \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n#rm -r \"${BUILD_DIR}/${CONFIGURATION}-universal\"\n#rm -r \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
@@ -631,6 +666,22 @@
 			};
 			name = Release;
 		};
+		C8CAF5F8214B859B00572ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8CAF5F9214B859B00572ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -666,6 +717,15 @@
 			buildConfigurations = (
 				C8CAF5EE214B7B0400572ECF /* Debug */,
 				C8CAF5EF214B7B0400572ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CAF5FA214B859B00572ECF /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CAF5F8214B859B00572ECF /* Debug */,
+				C8CAF5F9214B859B00572ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
