@@ -202,10 +202,42 @@
 		C8CAF5E8214B7B0400572ECF /* libPROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				C8CAF5F3214B7BD600572ECF /* Model */,
+				C8CAF5F5214B7BD700572ECF /* Resource */,
+				C8CAF5F4214B7BD700572ECF /* View */,
+				C8CAF5F6214B7BD700572ECF /* ViewController */,
 				C8CAF5F0214B7B2D00572ECF /* AAAA.h */,
 				C8CAF5F1214B7B2D00572ECF /* AAAA.m */,
 			);
 			path = libPROJECT;
+			sourceTree = "<group>";
+		};
+		C8CAF5F3214B7BD600572ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8CAF5F4214B7BD700572ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8CAF5F5214B7BD700572ECF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C8CAF5F6214B7BD700572ECF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
