@@ -1,13 +1,13 @@
 //
-//  CPDaaaaa.h
-//  PROJECT_Example
+//  lib_PROJECT.m
+//  lib_PROJECT
 //
 //  Created by 施斌 on 2018/9/14.
 //  Copyright © 2018年 PROJECT_OWNER. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "lib_PROJECT.h"
 
-@interface CPDaaaaa : NSObject
+@implementation lib_PROJECT
 
 @end

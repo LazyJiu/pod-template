@@ -22,9 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C8CAF5CE214B763800572ECF /* libPROJECT.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CAF5CD214B763800572ECF /* libPROJECT.m */; };
-		C8CAF5CF214B763800572ECF /* libPROJECT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8CAF5CC214B763800572ECF /* libPROJECT.h */; };
-		C8CAF5D5214B772000572ECF /* CPDaaaaa.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CAF5D4214B772000572ECF /* CPDaaaaa.m */; };
+		C8CAF5DE214B78A800572ECF /* lib_PROJECT.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CAF5DD214B78A800572ECF /* lib_PROJECT.m */; };
+		C8CAF5DF214B78A800572ECF /* lib_PROJECT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8CAF5DC214B78A800572ECF /* lib_PROJECT.h */; };
 		C8CB942C212F9FBE00D66C6A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CB942B212F9FBE00D66C6A /* BaseNavigationController.m */; };
 		C8E82FA0212C0BD10050DB61 /* Module.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E82F9F212C0BD00050DB61 /* Module.plist */; };
 /* End PBXBuildFile section */
@@ -40,13 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C8CAF5C8214B763800572ECF /* CopyFiles */ = {
+		C8CAF5D8214B78A800572ECF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C8CAF5CF214B763800572ECF /* libPROJECT.h in CopyFiles */,
+				C8CAF5DF214B78A800572ECF /* lib_PROJECT.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,11 +73,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C8CAF5CA214B763800572ECF /* liblibPROJECT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibPROJECT.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8CAF5CC214B763800572ECF /* libPROJECT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libPROJECT.h; sourceTree = "<group>"; };
-		C8CAF5CD214B763800572ECF /* libPROJECT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libPROJECT.m; sourceTree = "<group>"; };
-		C8CAF5D3214B772000572ECF /* CPDaaaaa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDaaaaa.h; sourceTree = "<group>"; };
-		C8CAF5D4214B772000572ECF /* CPDaaaaa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDaaaaa.m; sourceTree = "<group>"; };
+		C8CAF5DA214B78A800572ECF /* liblib_PROJECT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblib_PROJECT.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CAF5DC214B78A800572ECF /* lib_PROJECT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib_PROJECT.h; sourceTree = "<group>"; };
+		C8CAF5DD214B78A800572ECF /* lib_PROJECT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lib_PROJECT.m; sourceTree = "<group>"; };
 		C8CB942A212F9FBE00D66C6A /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		C8CB942B212F9FBE00D66C6A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		C8E82F9F212C0BD00050DB61 /* Module.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Module.plist; sourceTree = "<group>"; };
@@ -105,7 +102,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8CAF5C7214B763800572ECF /* Frameworks */ = {
+		C8CAF5D7214B78A800572ECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -121,7 +118,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for PROJECT */,
 				6003F5B5195388D20070C39A /* Tests */,
-				C8CAF5CB214B763800572ECF /* libPROJECT */,
+				C8CAF5DB214B78A800572ECF /* lib_PROJECT */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 			);
@@ -132,7 +129,7 @@
 			children = (
 				6003F58A195388D20070C39A /* PROJECT_Example.app */,
 				6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */,
-				C8CAF5CA214B763800572ECF /* liblibPROJECT.a */,
+				C8CAF5DA214B78A800572ECF /* liblib_PROJECT.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,8 +159,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				C8CAF5D3214B772000572ECF /* CPDaaaaa.h */,
-				C8CAF5D4214B772000572ECF /* CPDaaaaa.m */,
 			);
 			name = "Example for PROJECT";
 			path = PROJECT;
@@ -206,13 +201,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C8CAF5CB214B763800572ECF /* libPROJECT */ = {
+		C8CAF5DB214B78A800572ECF /* lib_PROJECT */ = {
 			isa = PBXGroup;
 			children = (
-				C8CAF5CC214B763800572ECF /* libPROJECT.h */,
-				C8CAF5CD214B763800572ECF /* libPROJECT.m */,
+				C8CAF5DC214B78A800572ECF /* lib_PROJECT.h */,
+				C8CAF5DD214B78A800572ECF /* lib_PROJECT.m */,
 			);
-			path = libPROJECT;
+			path = lib_PROJECT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,21 +248,21 @@
 			productReference = 6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C8CAF5C9214B763800572ECF /* libPROJECT */ = {
+		C8CAF5D9214B78A800572ECF /* lib_PROJECT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8CAF5D2214B763800572ECF /* Build configuration list for PBXNativeTarget "libPROJECT" */;
+			buildConfigurationList = C8CAF5E0214B78A800572ECF /* Build configuration list for PBXNativeTarget "lib_PROJECT" */;
 			buildPhases = (
-				C8CAF5C6214B763800572ECF /* Sources */,
-				C8CAF5C7214B763800572ECF /* Frameworks */,
-				C8CAF5C8214B763800572ECF /* CopyFiles */,
+				C8CAF5D6214B78A800572ECF /* Sources */,
+				C8CAF5D7214B78A800572ECF /* Frameworks */,
+				C8CAF5D8214B78A800572ECF /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = libPROJECT;
-			productName = libPROJECT;
-			productReference = C8CAF5CA214B763800572ECF /* liblibPROJECT.a */;
+			name = lib_PROJECT;
+			productName = lib_PROJECT;
+			productReference = C8CAF5DA214B78A800572ECF /* liblib_PROJECT.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -283,7 +278,7 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
-					C8CAF5C9214B763800572ECF = {
+					C8CAF5D9214B78A800572ECF = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -304,7 +299,7 @@
 			targets = (
 				6003F589195388D20070C39A /* PROJECT_Example */,
 				6003F5AD195388D20070C39A /* PROJECT_Tests */,
-				C8CAF5C9214B763800572ECF /* libPROJECT */,
+				C8CAF5D9214B78A800572ECF /* lib_PROJECT */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +335,6 @@
 				C8CB942C212F9FBE00D66C6A /* BaseNavigationController.m in Sources */,
 				6003F59E195388D20070C39A /* CPDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CPDViewController.m in Sources */,
-				C8CAF5D5214B772000572ECF /* CPDaaaaa.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,11 +347,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8CAF5C6214B763800572ECF /* Sources */ = {
+		C8CAF5D6214B78A800572ECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CAF5CE214B763800572ECF /* libPROJECT.m in Sources */,
+				C8CAF5DE214B78A800572ECF /* lib_PROJECT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +536,7 @@
 			};
 			name = Release;
 		};
-		C8CAF5D0214B763800572ECF /* Debug */ = {
+		C8CAF5E1214B78A800572ECF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -574,7 +568,7 @@
 			};
 			name = Debug;
 		};
-		C8CAF5D1214B763800572ECF /* Release */ = {
+		C8CAF5E2214B78A800572ECF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -637,11 +631,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8CAF5D2214B763800572ECF /* Build configuration list for PBXNativeTarget "libPROJECT" */ = {
+		C8CAF5E0214B78A800572ECF /* Build configuration list for PBXNativeTarget "lib_PROJECT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8CAF5D0214B763800572ECF /* Debug */,
-				C8CAF5D1214B763800572ECF /* Release */,
+				C8CAF5E1214B78A800572ECF /* Debug */,
+				C8CAF5E2214B78A800572ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

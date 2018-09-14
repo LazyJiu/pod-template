@@ -1,13 +1,13 @@
 //
-//  libPROJECT.m
-//  libPROJECT
+//  lib_PROJECT.h
+//  lib_PROJECT
 //
 //  Created by 施斌 on 2018/9/14.
 //  Copyright © 2018年 PROJECT_OWNER. All rights reserved.
 //
 
-#import "libPROJECT.h"
+#import <Foundation/Foundation.h>
 
-@implementation libPROJECT
+@interface lib_PROJECT : NSObject
 
 @end
