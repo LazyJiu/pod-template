@@ -30,13 +30,14 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  if ENV['IS_SOURCE'] || ENV["${POD_NAME}_SOURCE"]
+  if ENV['IS_SOURCE'] || ENV['${POD_NAME}_SOURCE']
       s.source_files = 'Example/lib${POD_NAME}/**/*.{h,m}'
-      s.resource = 'Example/lib${POD_NAME}/**/*.bundle'
+      s.resource_bundles = {
+        '${POD_NAME}' => ['Example/lib${POD_NAME}/**/*.{png,xib}']
+      }
   else
       s.source_files = 'Example/lib${POD_NAME}/**/*.h'
       s.vendored_library = 'Example/lib${POD_NAME}}/lib${POD_NAME}.a'
-      s.resource = 'Example/lib${POD_NAME}/**/*.bundle'
       s.resource_bundles = {
         '${POD_NAME}' => ['Example/lib${POD_NAME}/**/*.{png,xib}']
       }
