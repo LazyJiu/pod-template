@@ -35,12 +35,18 @@ TODO: Add long description of the pod here.
       s.resource_bundles = {
         '${POD_NAME}' => ['Example/lib${POD_NAME}/**/*.{png,xib}']
       }
+      puts '-------------------------------------------------------------------'
+      puts "Notice:#{s.name} is source now"
+      puts '-------------------------------------------------------------------'
   else
       s.source_files = 'Example/lib${POD_NAME}/**/*.h'
-      s.vendored_library = 'Example/lib${POD_NAME}}/lib${POD_NAME}.a'
+      s.vendored_library = 'Example/lib${POD_NAME}/lib${POD_NAME}.a'
       s.resource_bundles = {
         '${POD_NAME}' => ['Example/lib${POD_NAME}/**/*.{png,xib}']
       }
+      puts '-------------------------------------------------------------------'
+      puts "Notice:#{s.name} is binary now"
+      puts '-------------------------------------------------------------------'
   end
 
  s.preserve_paths = 'Example/lib${POD_NAME}/**/*'
