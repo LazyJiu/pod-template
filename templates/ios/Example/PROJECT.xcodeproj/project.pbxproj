@@ -210,9 +210,33 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		C81751B922EA97C000CA338B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C81751BA22EA97C100CA338B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C81751BB22EA97C100CA338B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C8CAF5E8214B7B0400572ECF /* libPROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				C81751BA22EA97C100CA338B /* Model */,
+				C81751BB22EA97C100CA338B /* View */,
+				C81751B922EA97C000CA338B /* ViewController */,
 			);
 			path = libPROJECT;
 			sourceTree = "<group>";
