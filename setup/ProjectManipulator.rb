@@ -117,10 +117,10 @@ RUBY
         end
 
         ["PROJECTManager.h", "PROJECTManager.m"].each do |file|
-          before = project_folder + "/libPROJECT" + file
+          before = project_folder + "/libPROJECT/manager" + file
           next unless File.exists? before
 
-          after = project_folder + "/libPROJECT" + file.gsub("PROJECT", @configurator.pod_name)
+          after = project_folder + "/libPROJECT/manager" + file.gsub("PROJECT", @configurator.pod_name)
           File.rename before, after
         end
       end
