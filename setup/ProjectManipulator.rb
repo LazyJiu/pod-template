@@ -115,6 +115,14 @@ RUBY
           after = project_folder + "/PROJECT/" + file.gsub("PROJECT", @configurator.pod_name)
           File.rename before, after
         end
+
+        ["PROJECTManager.h", "PROJECTManager.m"].each do |file|
+          before = project_folder + "/libPROJECT" + file
+          next unless File.exists? before
+
+          after = project_folder + "/libPROJECT" + file.gsub("PROJECT", @configurator.pod_name)
+          File.rename before, after
+        end
       end
 
     end
