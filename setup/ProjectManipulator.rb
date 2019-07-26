@@ -95,7 +95,6 @@ RUBY
       # rename xcproject
       File.rename(project_folder + "/PROJECT.xcodeproj", project_folder + "/" +  @configurator.pod_name + ".xcodeproj")
 
-      File.rename(project_folder + "/libPROJECT", project_folder + "/" + "lib" + @configurator.pod_name)
 
       unless @remove_demo_target
         # change app file prefixes
@@ -130,6 +129,7 @@ RUBY
     def rename_project_folder
       if Dir.exist? project_folder + "/PROJECT"
         File.rename(project_folder + "/PROJECT", project_folder + "/" + @configurator.pod_name)
+        File.rename(project_folder + "/libPROJECT", project_folder + "/" + "lib" + @configurator.pod_name)
       end
     end
 
