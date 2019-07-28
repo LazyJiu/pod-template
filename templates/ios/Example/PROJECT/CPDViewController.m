@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)login:(id)sender {
-    [MGJRouter openURL:login_home];
+     [MGJRouter openURL:login_home];
 }
 
 @end

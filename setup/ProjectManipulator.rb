@@ -90,11 +90,10 @@ RUBY
     def rename_files
       # shared schemes have project specific names
       scheme_path = project_folder + "/PROJECT.xcodeproj/xcshareddata/xcschemes/"
-      File.rename(scheme_path + "PROJECT.xcscheme", scheme_path +  @configurator.pod_name + "_Example.xcscheme")
+      File.rename(scheme_path + "PROJECT.xcscheme", scheme_path +  @configurator.pod_name + "-Example.xcscheme")
 
       # rename xcproject
       File.rename(project_folder + "/PROJECT.xcodeproj", project_folder + "/" +  @configurator.pod_name + ".xcodeproj")
-
 
       unless @remove_demo_target
         # change app file prefixes
@@ -114,14 +113,6 @@ RUBY
           after = project_folder + "/PROJECT/" + file.gsub("PROJECT", @configurator.pod_name)
           File.rename before, after
         end
-
-        ["PROJECTManager.h", "PROJECTManager.m"].each do |file|
-          before = project_folder + "/libPROJECT/manager/" + file
-          next unless File.exists? before
-
-          after = project_folder + "/libPROJECT/manager/" + file.gsub("PROJECT", @configurator.pod_name)
-          File.rename before, after
-        end
       end
 
     end
@@ -129,7 +120,6 @@ RUBY
     def rename_project_folder
       if Dir.exist? project_folder + "/PROJECT"
         File.rename(project_folder + "/PROJECT", project_folder + "/" + @configurator.pod_name)
-        File.rename(project_folder + "/libPROJECT", project_folder + "/" + "lib" + @configurator.pod_name)
       end
     end
 

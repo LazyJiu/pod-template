@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		C8CAF5F7214B859B00572ECF /* Aggregate */ = {
+		C8C7D25622EC86CF003CE3EF /* Aggregate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C8CAF5FA214B859B00572ECF /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildConfigurationList = C8C7D25922EC86CF003CE3EF /* Build configuration list for PBXAggregateTarget "Aggregate" */;
 			buildPhases = (
-				C8CAF5FB214B85A700572ECF /* ShellScript */,
+				C8C7D25A22EC86D3003CE3EF /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -36,9 +36,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C81751CC22EA9D2800CA338B /* PROJECTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C81751CB22EA9D2800CA338B /* PROJECTManager.m */; };
-		C8CB942C212F9FBE00D66C6A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CB942B212F9FBE00D66C6A /* BaseNavigationController.m */; };
-		C8E82FA0212C0BD10050DB61 /* Module.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E82F9F212C0BD00050DB61 /* Module.plist */; };
+		C81ADC9022ED936500BFF84D /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81ADC8F22ED936500BFF84D /* BaseNavigationController.m */; };
+		C81ADC9222ED937200BFF84D /* Module.plist in Resources */ = {isa = PBXBuildFile; fileRef = C81ADC9122ED937200BFF84D /* Module.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,18 +49,6 @@
 			remoteInfo = PROJECT;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C81751BE22EA99B000CA338B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6003F58A195388D20070C39A /* PROJECT_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECT_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,12 +72,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C81751C022EA99B000CA338B /* liblibPROJECT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibPROJECT.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C81751CA22EA9D2800CA338B /* PROJECTManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROJECTManager.h; sourceTree = "<group>"; };
-		C81751CB22EA9D2800CA338B /* PROJECTManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTManager.m; sourceTree = "<group>"; };
-		C8CB942A212F9FBE00D66C6A /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		C8CB942B212F9FBE00D66C6A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		C8E82F9F212C0BD00050DB61 /* Module.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Module.plist; sourceTree = "<group>"; };
+		C81ADC8E22ED936500BFF84D /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		C81ADC8F22ED936500BFF84D /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		C81ADC9122ED937200BFF84D /* Module.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Module.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +98,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C81751BD22EA99B000CA338B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,7 +107,6 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for PROJECT */,
 				6003F5B5195388D20070C39A /* Tests */,
-				C81751C122EA99B000CA338B /* libPROJECT */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 			);
@@ -141,7 +117,6 @@
 			children = (
 				6003F58A195388D20070C39A /* PROJECT_Example.app */,
 				6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */,
-				C81751C022EA99B000CA338B /* liblibPROJECT.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,9 +135,9 @@
 		6003F593195388D20070C39A /* Example for PROJECT */ = {
 			isa = PBXGroup;
 			children = (
-				C8CB942A212F9FBE00D66C6A /* BaseNavigationController.h */,
-				C8CB942B212F9FBE00D66C6A /* BaseNavigationController.m */,
-				C8E82F9F212C0BD00050DB61 /* Module.plist */,
+				C81ADC9122ED937200BFF84D /* Module.plist */,
+				C81ADC8E22ED936500BFF84D /* BaseNavigationController.h */,
+				C81ADC8F22ED936500BFF84D /* BaseNavigationController.m */,
 				6003F59C195388D20070C39A /* CPDAppDelegate.h */,
 				6003F59D195388D20070C39A /* CPDAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -213,23 +188,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C81751C122EA99B000CA338B /* libPROJECT */ = {
-			isa = PBXGroup;
-			children = (
-				C81751C922EA9CB000CA338B /* manager */,
-			);
-			path = libPROJECT;
-			sourceTree = "<group>";
-		};
-		C81751C922EA9CB000CA338B /* manager */ = {
-			isa = PBXGroup;
-			children = (
-				C81751CA22EA9D2800CA338B /* PROJECTManager.h */,
-				C81751CB22EA9D2800CA338B /* PROJECTManager.m */,
-			);
-			path = manager;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,23 +226,6 @@
 			productReference = 6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C81751BF22EA99B000CA338B /* libPROJECT */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C81751C622EA99B000CA338B /* Build configuration list for PBXNativeTarget "libPROJECT" */;
-			buildPhases = (
-				C81751BC22EA99B000CA338B /* Sources */,
-				C81751BD22EA99B000CA338B /* Frameworks */,
-				C81751BE22EA99B000CA338B /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = libPROJECT;
-			productName = libPROJECT;
-			productReference = C81751C022EA99B000CA338B /* liblibPROJECT.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -298,12 +239,8 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
-					C81751BF22EA99B000CA338B = {
+					C8C7D25622EC86CF003CE3EF = {
 						CreatedOnToolsVersion = 10.1;
-						ProvisioningStyle = Automatic;
-					};
-					C8CAF5F7214B859B00572ECF = {
-						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -323,8 +260,7 @@
 			targets = (
 				6003F589195388D20070C39A /* PROJECT_Example */,
 				6003F5AD195388D20070C39A /* PROJECT_Tests */,
-				C8CAF5F7214B859B00572ECF /* Aggregate */,
-				C81751BF22EA99B000CA338B /* libPROJECT */,
+				C8C7D25622EC86CF003CE3EF /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +274,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				C8E82FA0212C0BD10050DB61 /* Module.plist in Resources */,
+				C81ADC9222ED937200BFF84D /* Module.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,18 +289,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C8CAF5FB214B85A700572ECF /* ShellScript */ = {
+		C8C7D25A22EC86D3003CE3EF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+			);
+			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nPROJ_NAME=PROJECT\nWORKSPACE_NAME=${PROJ_NAME}.xcworkspace\nLIB_SCHEME_NAME=lib${PROJ_NAME}\nLIB_NAME=lib${LIB_SCHEME_NAME}\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions\n#${CONFIGURATION}\n\nxcodebuild clean -workspace \"${WORKSPACE_NAME}\" -scheme \"${PROJ_NAME}_Example\" -configuration Release\n\nxcodebuild -workspace \"${WORKSPACE_NAME}\" -scheme \"${LIB_SCHEME_NAME}\" -configuration Release -sdk iphoneos ONLY_ACTIVE_ARCH=NO   BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build -UseModernBuildSystem=NO\n\n\nxcodebuild -workspace \"${WORKSPACE_NAME}\" -scheme \"${LIB_SCHEME_NAME}\" -configuration Release -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build -UseModernBuildSystem=NO\n\n#fi\n#删除\nif [ -f \"${SRCROOT}/${LIB_SCHEME_NAME}/${LIB_SCHEME_NAME}.a\" ];\nthen\nrm -r \"${SRCROOT}/${LIB_SCHEME_NAME}/${LIB_SCHEME_NAME}.a\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${LIB_SCHEME_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${LIB_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${LIB_NAME}.a\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${LIB_SCHEME_NAME}.a\" \"${SRCROOT}/${LIB_SCHEME_NAME}\"\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${SRCROOT}/${LIB_SCHEME_NAME}\"\n\n# 删除\nrm -r \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nrm -r \"${BUILD_DIR}/${CONFIGURATION}-universal\"\nrm -r \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\n\n";
+			shellScript = "#!/bin/sh\n#UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n#LIB_SCHEME_NAME=lib${PROJ_NAME}\n#LIB_NAME=lib${LIB_SCHEME_NAME}\n# make sure the output directory exists\n#mkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions\n\nTARGET_NAME=PROJECT\nPRJ_NAME=${SRCROOT}/Pods/Pods.xcodeproj\nBINARY_ROOT_PATH=${SRCROOT}/../\nBINARY_NAME=lib${TARGET_NAME}\n\nif [ -f \"${BINARY_ROOT_PATH}/${TARGET_NAME}/${BINARY_NAME}.a\" ];\nthen\nrm -r \"${BINARY_ROOT_PATH}/${TARGET_NAME}/${BINARY_NAME}.a\"\nfi\n\nxcodebuild clean -project \"${PRJ_NAME}\" -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION}\n\nxcodebuild -project \"${PRJ_NAME}\" -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphoneos ONLY_ACTIVE_ARCH=NO  \n\nxcodebuild -project \"${PRJ_NAME}\" -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO  \n\n#open ${BINARY_ROOT_PATH}/${TARGET_NAME}\n#mkdir -p \"${BINARY_ROOT_PATH}/${TARGET_NAME}/aaaa\"\n#open ${SRCROOT}/build/${CONFIGURATION}-iphoneos\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${BINARY_ROOT_PATH}/${TARGET_NAME}/${BINARY_NAME}.a\" \"${SRCROOT}/build/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}/${BINARY_NAME}.a\" \"${SRCROOT}/build/${CONFIGURATION}-iphoneos/${TARGET_NAME}/${BINARY_NAME}.a\"\n# Step 5. Convenience step to copy the framework to the project's directory\n#cp -R \"${UNIVERSAL_OUTPUTFOLDER}/${LIB_SCHEME_NAME}.a\" \"${SRCROOT}/${LIB_SCHEME_NAME}\"\n# Step 6. Convenience step to open the project's directory in Finder\n#open \"${SRCROOT}/${LIB_SCHEME_NAME}\"\n\n# 删除\n#rm -r \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n#rm -r \"${BUILD_DIR}/${CONFIGURATION}-universal\"\n#rm -r \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\n\nxcodebuild clean -project \"${PRJ_NAME}\" -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION}∫∫\n\nopen ${BINARY_ROOT_PATH}/${TARGET_NAME}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -373,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CB942C212F9FBE00D66C6A /* BaseNavigationController.m in Sources */,
+				C81ADC9022ED936500BFF84D /* BaseNavigationController.m in Sources */,
 				6003F59E195388D20070C39A /* CPDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CPDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -385,14 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C81751BC22EA99B000CA338B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C81751CC22EA9D2800CA338B /* PROJECTManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -511,13 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ebowin.yancheng;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -526,13 +458,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ebowin.yancheng;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -542,7 +474,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
@@ -555,6 +487,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PROJECT_Example.app/PROJECT_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -565,7 +498,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
@@ -574,98 +507,24 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PROJECT_Example.app/PROJECT_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
-		C81751C722EA99B000CA338B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C81751C822EA99B000CA338B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C8CAF5F8214B859B00572ECF /* Debug */ = {
+		C8C7D25722EC86CF003CE3EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				ENABLE_BITCODE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C8CAF5F9214B859B00572ECF /* Release */ = {
+		C8C7D25822EC86CF003CE3EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				ENABLE_BITCODE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -700,20 +559,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C81751C622EA99B000CA338B /* Build configuration list for PBXNativeTarget "libPROJECT" */ = {
+		C8C7D25922EC86CF003CE3EF /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C81751C722EA99B000CA338B /* Debug */,
-				C81751C822EA99B000CA338B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C8CAF5FA214B859B00572ECF /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C8CAF5F8214B859B00572ECF /* Debug */,
-				C8CAF5F9214B859B00572ECF /* Release */,
+				C8C7D25722EC86CF003CE3EF /* Debug */,
+				C8C7D25822EC86CF003CE3EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

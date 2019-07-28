@@ -89,6 +89,7 @@ module Pod
       replace_variables_in_files
       clean_template_files
       rename_template_files
+      replace_variables_in_third
       add_pods_to_podfile
       customise_prefix
       rename_classes_folder
@@ -110,7 +111,7 @@ module Pod
       puts ""
 
       Dir.chdir("Example") do
-        system "pod install"
+        system "IS_SOURCE=1 pod install"
       end
 
       `git add Example/#{pod_name}.xcodeproj/project.pbxproj`
@@ -135,6 +136,17 @@ module Pod
         text.gsub!("${DATE}", date)
         File.open(file_name, "w") { |file| file.puts text }
       end
+    end
+
+    def replace_variables_in_third
+      file_names = ['POD/ModuleManager/PROJECTManager.h', 'POD/ModuleManager/PROJECTManager.m']
+      file_names.each do |file_name|
+        text = File.read(file_name)
+        text.gsub!("PROJECT", @pod_name)
+        File.open(file_name, "w") { |file| file.puts text }
+      end
+      FileUtils.mv "POD/ModuleManager/PROJECTManager.h", "POD/ModuleManager/#{pod_name}Manager.h"
+      FileUtils.mv "POD/ModuleManager/PROJECTManager.m", "POD/ModuleManager/#{pod_name}Manager.m"
     end
 
     def add_pod_to_podfile podname

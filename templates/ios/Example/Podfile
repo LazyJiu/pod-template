@@ -1,25 +1,13 @@
-#use_frameworks!
-source 'http://192.168.1.107:7000/ios/YBYSpec'
-source 'https://github.com/CocoaPods/Specs'
+use_frameworks!
+
+platform :ios, '8.0'
 
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
-  pod 'YBYWeakBusinessMoudle', '~> 1.0'
-  
-  pod 'YBYLoginModule', '~> 1.0'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
 
     ${INCLUDED_PODS}
   end
-end
-
-target 'lib${POD_NAME}' do
-  pod 'YBYConfig', '~> 1.0'
-  pod 'YBYCategory', '~> 1.0'
-  pod 'Masonry','1.1.0'
-  pod 'YYBaseModel', '~> 1.0'
-  pod 'YBYNetWork', '~> 1.0'
-  pod 'Utils', '~> 1.0'
 end

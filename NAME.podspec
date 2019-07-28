@@ -31,31 +31,31 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   if ENV['IS_SOURCE'] || ENV['${POD_NAME}_SOURCE']
-      s.source_files = 'Example/lib${POD_NAME}/**/*.{h,m}'
+      s.source_files = '${POD_NAME}/**/*.{h,m}'
       s.resource_bundles = {
-        '${POD_NAME}' => ['Example/lib${POD_NAME}/**/*.{png,xib}']
+        '${POD_NAME}' => ['${POD_NAME}/**/*.{png,xib,plist}']
       }
       puts '-------------------------------------------------------------------'
       puts "Notice:#{s.name} is source now"
       puts '-------------------------------------------------------------------'
   else
-      s.source_files = 'Example/lib${POD_NAME}/**/*.h'
-      s.vendored_library = 'Example/lib${POD_NAME}/lib${POD_NAME}.a'
+      s.source_files = '${POD_NAME}/**/*.h'
+      s.vendored_library = '${POD_NAME}/lib${POD_NAME}.a'
       s.resource_bundles = {
-        '${POD_NAME}' => ['Example/lib${POD_NAME}/**/*.{png,xib}']
+        '${POD_NAME}' => ['${POD_NAME}/**/*.{png,xib,plist}']
       }
       puts '-------------------------------------------------------------------'
       puts "Notice:#{s.name} is binary now"
       puts '-------------------------------------------------------------------'
   end
 
- s.preserve_paths = 'Example/lib${POD_NAME}/**/*'
+ s.preserve_paths = '${POD_NAME}/**/*'
 
 
-s.dependency 'YBYConfig', '~> 1.0'
-s.dependency 'YBYCategory', '~> 1.0'
-s.dependency 'Masonry','1.1.0'
-s.dependency 'YYBaseModel', '~> 1.0'
-s.dependency 'YBYNetWork', '~> 1.0'
-s.dependency 'Utils', '~> 1.0'
+#s.dependency 'YBYConfig', '~> 1.0'
+#s.dependency 'YBYCategory', '~> 1.0'
+#s.dependency 'Masonry','1.1.0'
+#s.dependency 'YYBaseModel', '~> 1.0'
+#s.dependency 'YBYNetWork', '~> 1.0'
+#s.dependency 'Utils', '~> 1.0'
 end
